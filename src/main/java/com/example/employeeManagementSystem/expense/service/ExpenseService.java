@@ -92,6 +92,10 @@ public class ExpenseService {
         return totalExpense == null ? 0 : totalExpense;
     }
 
+    public ExpenseResponseDto getExpenseByExpenseId(Integer id) {
+        return convertEntityToDto(getExpenseById(id));
+    }
+
 //    public List<ExpenseResponseDto> getExpense(Integer empId) {
 //        SalaryEntity salaryEntity = salaryService.getEmployeeById(empId);
 //        List<ExpenseEntity> expenseEntityList = salaryEntity.getExpenseEntityList();

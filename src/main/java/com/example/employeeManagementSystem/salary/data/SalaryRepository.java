@@ -13,5 +13,4 @@ public interface SalaryRepository extends JpaRepository<SalaryEntity, Integer> {
    @Query("select e from salary e where e.employeeEntity = ?1 and e.month = ?2 and e.year = ?3")
    SalaryEntity getSalaryEntityByEmployeeMonthAndYear(EmployeeEntity employee, Month month, Integer year);
 
-
 }
