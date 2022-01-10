@@ -38,6 +38,7 @@ public class LoginController {
 
         final String jwt = jwtUtility.generateToken(userDetails);
 
+
         return ResponseEntity.ok(new LoginResponseDto(jwt));
     }
 

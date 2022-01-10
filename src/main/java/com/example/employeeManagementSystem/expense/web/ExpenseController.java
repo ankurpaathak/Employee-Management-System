@@ -35,9 +35,4 @@ public class ExpenseController {
         return expenseService.getExpenseByExpenseId(id);
     }
 
-//    @GetMapping(value="employee/{id}")
-//    public List<ExpenseResponseDto> getExpense(@PathVariable Integer id){
-//        return expenseService.getExpense(id);
-//    }
-
 }

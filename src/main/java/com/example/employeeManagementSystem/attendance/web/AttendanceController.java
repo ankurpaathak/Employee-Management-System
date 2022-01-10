@@ -23,11 +23,6 @@ public class AttendanceController {
         return attendanceService.markAttendance(attendanceRequestDto);
     }
 
-//    @GetMapping(value = "/employee/{id}")
-//    public List<AttendanceResponseDto> getAttendance(@PathVariable Integer id){
-//        return attendanceService.getAttendance(id);
-//    }
-
     @PutMapping(value = "/update")
     public String attendanceUpdate(@RequestBody AttendanceUpdateRequestDto attendanceUpdateRequestDto){
         return attendanceService.updateAttendance(attendanceUpdateRequestDto);

@@ -40,17 +40,6 @@ public class AttendanceService {
         return "Attendance Marked Successfully";
     }
 
-//    public List<AttendanceResponseDto> getAttendance(Integer empId) {
-//        SalaryEntity salaryEntity = salaryService.getEmployeeById(empId);
-//        List<AttendanceEntity> attendanceEntityList = salaryEntity.getAttendanceEntityList();
-//        List<AttendanceResponseDto> attendanceResponseDtoList = new ArrayList<>();
-//        attendanceEntityList.forEach(attendanceEntity -> {
-//            attendanceResponseDtoList.add(convertEntityToDto(attendanceEntity));
-//
-//        });
-//        return attendanceResponseDtoList;
-//    }
-
     public List<AttendanceResponseDto> getAttendanceByMonth(Integer empId, Month month, Integer year){
         SalaryEntity salaryEntity = salaryService.getSalaryByEmployeeMonthYear(empId, month, year);
         List<AttendanceResponseDto> attendanceResponseDtoList = new ArrayList<>();

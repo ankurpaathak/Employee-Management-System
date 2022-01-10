@@ -96,13 +96,4 @@ public class ExpenseService {
         return convertEntityToDto(getExpenseById(id));
     }
 
-//    public List<ExpenseResponseDto> getExpense(Integer empId) {
-//        SalaryEntity salaryEntity = salaryService.getEmployeeById(empId);
-//        List<ExpenseEntity> expenseEntityList = salaryEntity.getExpenseEntityList();
-//        List<ExpenseResponseDto> expenseResponseDtoList = new ArrayList<>();
-//        expenseEntityList.forEach(expenseEntity -> {
-//            expenseResponseDtoList.add(convertEntityToDto(expenseEntity));
-//        });
-//        return expenseResponseDtoList;
-//    }
 }
